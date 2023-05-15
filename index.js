@@ -5,6 +5,7 @@ import path from 'path';
 import bcrypt from 'bcrypt';
 import passport from 'passport';
 import passportLocal from 'passport-local';
+import { log } from 'console';
 
 const users = JSON.parse(fs.readFileSync('data.json'));
 
@@ -97,3 +98,4 @@ function checkNotAuthentication(req, res,next){
 
 app.listen(process.env.PORT)
 
+console.log("HelloWorld");
